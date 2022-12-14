@@ -1,5 +1,9 @@
 import { Outlet } from 'dumi';
 
 export default function GlobalLayout() {
-  return <Outlet />;
+  return (
+    <div className="h-full">
+      <Outlet />
+    </div>
+  );
 }

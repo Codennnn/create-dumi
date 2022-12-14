@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "declaration": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "react",
     "baseUrl": "./",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "importHelpers": true,
+    "noImplicitAny": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "dumi-app/*": ["src/*", "*"]
     }
-  }
+  },
+  "include": ["**/*", ".dumi/pages/**/*", ".dumi/theme/**/*"],
+  "exclude": ["**/node_modules", ".git/**/*", "docs-dist"]
 }
